@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Informações da Reserva</h1>
+    </header>
+
+    <div class="formulario">
+        <form action="saida.php" method="POST">
+            <label for="nome">Nome do Hóspede</label>
+            <input type="text" name="nome" id="nome" required>
+
+            <label for="tipo">Tipo de Quarto</label>
+            <select name="tipo" id="tipo" required>
+                <option value="" disabled selected>Selecione...</option>
+                <option value="standard">Standard</option>
+                <option value="suite">Suíte</option>
+            </select>
+
+            <label for="diarias">Quantidade de Diárias</label>
+            <input type="number" name="diarias" id="diarias" required>
+
+            <label>Deseja café da manhã?</label>
+            <input type="radio" name="cafe" id="cafe" value="Sim">
+            <label>Sim</label>
+            <input type="radio" name="cafe" id="cafe" value="Não">
+            <label>Não</label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

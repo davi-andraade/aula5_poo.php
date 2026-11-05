@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Sistema de Pagamento de Vendedores</h1>
+    </header>
+
+    <div class="formulario">
+        <form action="saida.php" method="POST">
+            <label for="nome">Nome do Vendedor</label>
+            <input type="text" name="nome" id="nome" required>
+
+            <label for="salario">Salário Base</label>
+            <input type="number" name="salario" id="salario" required>
+
+            <label for="vendas">Total de vendas no mês (R$)</label>
+            <input type="number" name="vendas" id="vendas" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
